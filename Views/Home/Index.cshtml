@@ -1,0 +1,20 @@
+﻿<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@TempData["error_msg"]
+@TempData["succ_msg"]
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p> Learn about our current openings </p>
+</div>
+<ul>
+    <li><a href="@Url.Action("CurrentOpenings","Home")">Current Openings</a></li>
+</ul>
+
+
+
